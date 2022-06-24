@@ -1,4 +1,4 @@
-from __main__ import *
+#from __main__ import *
 import os
 import time
 import random
@@ -8,7 +8,7 @@ import random
 # Pure organisation purposes...
 # UF selection of word to print
 
-def wordboard(currentcharacters, count, guesslist, score):
+def wordboard(currentcharacters, count, guesslist, score,looperL):
   time.sleep(0.5)
 
   dashboxtop = ("---")
@@ -34,6 +34,12 @@ def wordboard(currentcharacters, count, guesslist, score):
     print("")
     print("Letter number " + looperL)
 
-  
+  print("")
+  print("Current score is " + score)
+
+  import main
+
+os.clear('cls')
+wordboard()
   
 
